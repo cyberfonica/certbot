@@ -12,7 +12,8 @@ RUN pip install -U pip setuptools
 
 RUN apk add --no-cache --virtual .certbot-deps \
         libffi \
-        libssl1.0 \
+        libssl1.1 \
+        libcrypto1.1 \
         openssl \
         ca-certificates \
         binutils
